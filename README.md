@@ -28,6 +28,7 @@ Example :
   * classTwo
   * classThree
   * empty
+  
 You should create a empty class because when classifying if there is no detection the neural network will choose the this class.
 
 After that you need to define path of your data folder.
@@ -64,11 +65,24 @@ The CATEGORIES list item names should be in same order otherwise you can't see t
 In this line you should define path of your test image.
 
 ## TIPS
-If there is a error with file or folder you can use " \\ " instead " \ "
+If there is an error with file or folder you can use " \\ " instead " \ "
 
 ```
 C:\\Users\\User\\Desktop\\File
 
+```
+
+When testing if you have an error with model file you should define name as you defined in createModel.py
+
+
+this line
+```python
+model = tf.keras.models.load_model("MODEL_NAME.model")
+```
+should be same with :
+
+```python
+model.save('MODEL_NAME.model') # this line should be same with testWithImg.py
 ```
 
 
