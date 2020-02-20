@@ -75,7 +75,7 @@ C:\\Users\\User\\Desktop\\File
 When testing if you have an error with model file you should define name as you defined in createModel.py
 
 
-this line
+the name that defined in this line
 ```python
 model = tf.keras.models.load_model("MODEL_NAME.model")
 ```
