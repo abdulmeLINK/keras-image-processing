@@ -53,7 +53,7 @@ In this line you can change the configs for your usage.
 If you want to test your model you should run the testWithImg.py
 
 ```python
-CATEGORIES = ["categ1", "categ2","categ3","empty"] # categories you have. Should be in same order...
+CATEGORIES = ["classOne", "classTwo","classThree","empty"] # categories you have. Should be in same order...
 ````
 
 The CATEGORIES list item names should be in same order otherwise you can't see the true class name.
