@@ -65,7 +65,7 @@ The CATEGORIES list item names should be in same order otherwise you can't see t
 In this line you should define path of your test image.
 
 ## TIPS
-If there is an error with file or folder you can use " \\ " instead " \ "
+If there is an error with file or folder you can use double "\" instead " \ "
 
 ```
 C:\\Users\\User\\Desktop\\File
