@@ -43,14 +43,14 @@ model.add(Activation("relu"))
 model.add(Dense(3))
 model.add(Activation("softmax"))
 
-# Compiling the model using some basic parameters
+# Compiling the model using some basic parameters. Modify here for performance update
 model.compile(loss="sparse_categorical_crossentropy",
 				optimizer="adam",
 				metrics=["accuracy"])
 
 # Training the model, with 40 iterations
 # validation_split corresponds to the percentage of images used for the validation phase compared to all the images
-history = model.fit(X, y, batch_size=64, epochs=40, validation_split=0.1)
+history = model.fit(X, y, batch_size=64, epochs=40, validation_split=0.1)s
 
 # Saving the model
 model_json = model.to_json()
