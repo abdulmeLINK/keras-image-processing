@@ -1,7 +1,6 @@
 # imageAI
-We will look at an example of image processing with Convolutional Neural Network in this project.
-This Neural Network may classify your images after training.
-I used this package in this project :
+This repository contains basic and understandable level of a neural network example. You can understand the fundamental working mechanism of machine learning concept.
+Packages used in this project:
 * tensorflow
 * keras
 * matplotlib
@@ -11,15 +10,15 @@ I used this package in this project :
 * random
 * os
 
-You can install with this code on your terminal:
+You can install packages by using the requirements text file:
 ```
-pip install TheNameOfPackage
+pip install -r requirements.txt
 ```
 
 ## Process Data
-Firstly you should run dataOrganize.py
-This process will organize your unprocessed images and will resize them.
-When you creating a folder you need to classify the folders.
+dataOrganize.py will check your data and extract the essential data from them.
+
+You need to create and classify your folders by considering your class names.
 
 Example :
 
@@ -29,9 +28,9 @@ Example :
   * classThree
   * empty
   
-You should create a empty class because when classifying if there is no detection the neural network will choose the this class.
+empty folder will contain unclassified elements.
 
-After that you need to define path of your data folder.
+Insert your data folder.
 Example:
 
 ```python
@@ -40,17 +39,17 @@ DATADIR = ".\DataFolder"
 ```
 
 ## Create Neural Network
-When you run createModel.py the process will create a .model file and while you testing the test images you will use this file.
+This chunk of code optimizes your model. Different kind of settings can be performed by changing arguments.
  
 ```python
 history = model.fit(X, y, batch_size=64, epochs=40, validation_split=0.1)
 
 ```
 
-In this line you can change the configs for your usage.
+In this line you can change the configs according your usage.
 
 ## Testing The Model With Images
-If you want to test your model you should run the testWithImg.py
+testWithImg.py used to test images. 
 
 ```python
 CATEGORIES = ["classOne", "classTwo","classThree","empty"] # categories you have. Should be in same order...
@@ -65,15 +64,15 @@ The CATEGORIES list item names should be in same order otherwise you can't see t
 In this line you should define path of your test image.
 
 ## TIPS
-If there is an error with file or folder you can use double "\" instead " \ "
+Windows uses the backslash "\" for seperating path elements in Python it may escape the next character so you need to use double backslash "\\"
 
 ```
 C:\\Users\\User\\Desktop\\File
 
 ```
+Note: Different kind of solutions for path problem can be used.
 
-When testing if you have an error with model file you should define name as you defined in createModel.py
-
+Don't forget the use same model number on your operations
 
 the name that defined in this line
 ```python

@@ -6,6 +6,8 @@ from keras.models import model_from_json
 from keras.models import load_model
 import matplotlib.pyplot as plt
 import numpy as np
+
+modelName = "MODEL_NAME.model"
 # Opening the files about data
 X = np.asarray(pickle.load(open("X.pickle", "rb")))
 y = np.asarray(pickle.load(open("y.pickle", "rb")))
@@ -58,7 +60,7 @@ with open("model.json", "w") as json_file :
 model.save_weights("MODEL_WEIGHTS.h5")
 print("Saved model to disk")
 
-model.save('MODEL_NAME.model')
+model.save()
 
 # Printing a graph showing the accuracy changes during the training phase
 print(history.history.keys())
