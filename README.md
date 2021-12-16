@@ -67,7 +67,12 @@ In this line you should define path of your test image.
 Windows uses the backslash "\" for seperating path elements in Python it may escape the next character so you need to use double backslash "\\"
 
 ```
-C:\\Users\\User\\Desktop\\File
+C:\\Users\\User\\Folder\\File
+
+```
+or
+```
+\home\user\folder\file
 
 ```
 Note: Different kind of solutions for path problem can be used.
