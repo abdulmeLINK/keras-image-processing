@@ -72,7 +72,7 @@ C:\\Users\\User\\Folder\\File
 ```
 or
 ```
-\home\user\folder\file
+/home/user/folder/file
 
 ```
 Note: Different kind of solutions for path problem can be used.
